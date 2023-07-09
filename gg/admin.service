@@ -1,0 +1,15 @@
+[Unit]
+Description=bot_admin
+After=syslog.target
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/smm/
+ExecStart=/usr/bin/python3 /root/smm/bot_admin.py
+RestartSec=30
+Restart=always
+ 
+[Install]
+WantedBy=multi-user.target

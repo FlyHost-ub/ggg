@@ -1,0 +1,15 @@
+[Unit]
+Description=easybotsfranchise_bot
+After=syslog.target
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=C:\Users\Professional\Desktop\anarchi/bot_list/easybotsfranchise_bot
+ExecStart=/usr/bin/python3 C:\Users\Professional\Desktop\anarchi/bot_list/easybotsfranchise_bot/main.py
+RestartSec=10
+Restart=always
+ 
+[Install]
+WantedBy=multi-user.target

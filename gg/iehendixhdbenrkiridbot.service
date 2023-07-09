@@ -1,0 +1,15 @@
+[Unit]
+Description=iehendixhdbenrkiridbot
+After=syslog.target
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=C:\Users\Jopa\Desktop\исходники\21\fransh gotovaya/bot_list/iehendixhdbenrkiridbot
+ExecStart=/usr/bin/python3 C:\Users\Jopa\Desktop\исходники\21\fransh gotovaya/bot_list/iehendixhdbenrkiridbot/main.py
+RestartSec=10
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
